@@ -1,12 +1,7 @@
 {
-  "extends": "@tsconfig/recommended",
   "compilerOptions": {
     "outDir": "dist",
-    "lib": [
-      "ES2021",
-      "ES2022.Object",
-      "DOM"
-    ],
+    "lib": ["ES2021", "ES2022.Object", "DOM"],
     "target": "ES2021",
     "module": "nodenext",
     "sourceMap": true,
@@ -17,14 +12,12 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedParameters": true,
     "useDefineForClassFields": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": [
-    "node_modules/",
-    "dist/",
-    "tests/"
-  ],
-  "include": [
-    "./src"
-  ]
+  "exclude": ["node_modules/", "dist/", "tests/"],
+  "include": ["./src"]
 }
