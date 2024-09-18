@@ -1,9 +1,11 @@
 {
-  "node_version": "20",
   "dockerfile_lines": [],
-  "dependencies": ["."],
   "graphs": {
     "simple_agent": "./src/index.ts:graph"
   },
-  "env": "../.env"
+  "env": [
+    "TAVILY_API_KEY",
+    "OPENAI_API_KEY"
+  ],
+  "node_version": "20"
 }
